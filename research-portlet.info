@@ -16,7 +16,7 @@
         <vendor url="http://openacs.org">OpenACS</vendor>
 
         <provides url="research-portlet" version="2.0.2"/>
-        <requires url="attachmens" version="0.1d"/>
+        <requires url="attachments" version="0.1d"/>
         <requires url="dotlrn" version="1.0"/>
         <requires url="dotlrn-fs" version="0.1a"/>
 
