@@ -21,14 +21,11 @@
 <if @shaded_p@ false>
 <if @n_attachments@ gt 0>
 
-Research Papers:
-<ul>
 <%
     foreach attachment $attachments {
         template::adp_puts "  <li><a href=\"[lindex $attachment 2]\">[lindex $attachment 1]</a></li>\n"
     }
 %>
-</ul>
 
 </if>
 <else>

@@ -18,5 +18,5 @@ array set config $cf
 
 set shaded_p $config(shaded_p)
 
-set attachments [attachments::get_attachments -object_id [dotlrn_community::get_community_id]]
+set attachments [attachments::get_attachments -object_id [dotlrn_community::get_community_id] -base_url "[dotlrn::get_url]/"]
 set n_attachments [llength $attachments]
