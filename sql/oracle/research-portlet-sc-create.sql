@@ -28,8 +28,8 @@ declare
 begin
 
     ds_id := portal_datasource.new(
-        'research_portlet',
-        'Displays the research paper portlet'
+        name => 'research_portlet',
+        description => 'Displays the research paper portlet'
     );
 
     portal_datasource.set_def_param(
@@ -80,7 +80,7 @@ begin
         ''
     );
 
-    acs_sc_impl.new(
+    foo := acs_sc_impl.new(
         'portal_datasource',
         'research_portlet',
         'research_portlet'
@@ -143,8 +143,8 @@ begin
     );
 
     acs_sc_binding.new(
-        'portal_datasource',
-        'research_portlet'
+        contract_name => 'portal_datasource',
+        impl_name => 'research_portlet'
     );
 
 end;

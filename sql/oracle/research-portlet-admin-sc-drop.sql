@@ -79,13 +79,13 @@ begin
     );
 
     acs_sc_binding.delete(
-        'portal_datasource',
-        'research_admin_portlet'
+        contract_name => 'portal_datasource',
+        impl_name => 'research_admin_portlet'
     );
 
     acs_sc_impl.delete(
-        'portal_datasource',
-        'research_admin_portlet'
+        impl_contract_name => 'portal_datasource',
+        impl_name => 'research_admin_portlet'
     );
 
 end;
